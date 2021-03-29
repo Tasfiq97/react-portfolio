@@ -1,0 +1,37 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../Images/bg (2).jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/bg (2).jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.App .navbar {
+  width: 100%;
+  height: 10vh;
+}
+
+@media screen and (max-width: 1100px) {
+  .App .navToggle {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.App .main-content {
+  width: 100%;
+  height: 100vh;
+}
+
+.App .about {
+  width: 100%;
+  height: 80vh;
+}
+
+.App .projects {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.99);
+}
+/*# sourceMappingURL=Layout.css.map */

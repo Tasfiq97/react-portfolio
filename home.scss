@@ -1,0 +1,55 @@
+.homepage {
+  margin-left: 3rem;
+  position: absolute;
+  top: 40%;
+
+  .hero {
+    .hero-text {
+      color: white;
+      h1 {
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+      }
+      .hero-p {
+        letter-spacing: 0.3rem;
+        margin-top: 1.8rem;
+        font-size: 1.8rem;
+      }
+    }
+    .icons {
+      margin-top: 4rem;
+      margin-left: 5rem;
+      .icon-hold {
+        color: black;
+        padding: 0.9rem;
+        border: 2px solid #38fa67;
+        border-radius: 100%;
+        font-size: 3.4rem;
+        transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+      .fb:hover {
+        color: #3b5998;
+        box-shadow: 0 0 60px rgba($color: #3b5998, $alpha: 0.8);
+      }
+      .gt:hover {
+        color: rgb(221, 221, 241);
+        box-shadow: 0 0 60px rgba($color: rgb(221, 221, 241), $alpha: 0.8);
+      }
+
+      .lid:hover {
+        color: rgb(42, 42, 167);
+        box-shadow: 0 0 80px rgba($color: rgb(42, 42, 167), $alpha: 0.99);
+      }
+      .twt:hover {
+        color: #00acee;
+        box-shadow: 0 0 60px rgba($color: #00acee, $alpha: 0.8);
+      }
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    font-size: 0.8rem;
+  }
+}

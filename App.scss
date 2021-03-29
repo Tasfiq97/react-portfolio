@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&family=Padauk:wght@700&display=swap");
+@import "../Styles/Layout.css";
+@import "../Styles/Navbar.css";
+@import "../Styles/home.css";
+@import "../Styles/about.css";
+@import "../Styles/projects.css";
+@import "../Styles/thatme.css";
+@import "../Styles/service.css";
+@import "../Styles/Contact.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #38fa67;
+  border-radius: 50px;
+}
+body {
+  font-family: "Balthazar", serif;
+  font-size: 2rem;
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  right: 10%;
+  width: 5rem;
+  height: 4rem;
+
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    height: 0.4rem;
+    width: 80%;
+    background-color: #38fa67;
+    pointer-events: none;
+    display: none;
+    border-radius: 20px;
+    &:not(:last-child) {
+      margin-bottom: 0.6rem;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    display: block;
+
+    .line-1,
+    .line-2,
+    .line-3 {
+      display: block;
+    }
+  }
+}
+
+// <<<<main color>>>>>>>>>>>>>>
+// #38fa67

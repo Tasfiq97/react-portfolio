@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&family=Padauk:wght@700&display=swap");
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\Layout.css);
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\Navbar.css);
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\home.css);
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\about.css);
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\projects.css);
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\thatme.css);
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\service.css);
+@import url(d:\WEB PROJECTS\portfolios\src\Styles\Contact.css);
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #38fa67;
+  border-radius: 50px;
+}
+
+body {
+  font-family: "Balthazar", serif;
+  font-size: 2rem;
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  right: 10%;
+  width: 5rem;
+  height: 4rem;
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-btn .line-1,
+.nav-btn .line-2,
+.nav-btn .line-3 {
+  height: 0.4rem;
+  width: 80%;
+  background-color: #38fa67;
+  pointer-events: none;
+  display: none;
+  border-radius: 20px;
+}
+
+.nav-btn .line-1:not(:last-child),
+.nav-btn .line-2:not(:last-child),
+.nav-btn .line-3:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav-btn {
+    display: block;
+  }
+  .nav-btn .line-1,
+  .nav-btn .line-2,
+  .nav-btn .line-3 {
+    display: block;
+  }
+}
+/*# sourceMappingURL=App.css.map */

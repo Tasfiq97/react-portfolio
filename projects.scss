@@ -1,0 +1,73 @@
+.full-project {
+  .head-sec {
+    text-align: center;
+    margin-bottom: 5rem;
+    h1 {
+      color: white;
+      font-size: 4rem;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 40%;
+        width: 20rem;
+        height: 10%;
+        margin-top: 1rem;
+        background-color: rgb(255, 251, 251);
+      }
+    }
+    p {
+      margin-top: 3rem;
+      font-size: 1.4rem;
+      color: white;
+    }
+  }
+  .project-sec {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    .pro-content {
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 0%;
+        height: 100%;
+        background-color: #38fa67;
+        opacity: 0.8;
+        transition: all 0.6s ease-out;
+      }
+      &:hover::before {
+        width: 80%;
+      }
+      img {
+        width: 80%;
+        cursor: pointer;
+      }
+      &:hover {
+        .pro-text {
+          transition: all 0.4s ease-in-out 0.3s;
+          transform-origin: top;
+          visibility: visible;
+        }
+      }
+    }
+    .pro-text {
+      color: rgb(0, 0, 0);
+      margin-bottom: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      font-size: 2.5rem;
+      //   background-color: chartreuse;
+      transform: translate(-50%, -50%);
+      visibility: hidden;
+      padding: 1rem 1rem;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.started {
+  width: 100%;
+  height: 80vh;
+  background-color: #04cf36;
+  margin-top: 5rem;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .started-one {
+      margin-top: 7rem;
+      margin-left: 3rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      h5 {
+        font-size: 1.2rem;
+        font-weight: 200;
+        margin-bottom: 1.5rem;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.4rem;
+        font-size: 300;
+        margin-top: 1.3rem;
+      }
+      .btn-two {
+        margin-top: 2rem;
+        margin-left: 4rem;
+        padding: 1rem 1rem;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        text-align: center;
+
+        border: 2px solid #38fa67;
+        font-size: 1.5rem;
+        background-color: #38fa67;
+        padding: 1rem 1rem;
+        color: black;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          background: none;
+          color: rgb(243, 236, 236);
+          box-shadow: 0 0 40px 0 rgba($color: #38fa87, $alpha: 1);
+        }
+      }
+    }
+  }
+  .started-two {
+    margin-top: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .icons {
+      font-size: 10rem;
+    }
+  }
+}

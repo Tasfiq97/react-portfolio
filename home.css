@@ -1,0 +1,70 @@
+.homepage {
+  margin-left: 3rem;
+  position: absolute;
+  top: 40%;
+}
+
+.homepage .hero .hero-text {
+  color: white;
+}
+
+.homepage .hero .hero-text h1 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+.homepage .hero .hero-text .hero-p {
+  letter-spacing: 0.3rem;
+  margin-top: 1.8rem;
+  font-size: 1.8rem;
+}
+
+.homepage .hero .icons {
+  margin-top: 4rem;
+  margin-left: 5rem;
+}
+
+.homepage .hero .icons .icon-hold {
+  color: black;
+  padding: 0.9rem;
+  border: 2px solid #38fa67;
+  border-radius: 100%;
+  font-size: 3.4rem;
+  -webkit-transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.homepage .hero .icons .icon-hold:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.homepage .hero .icons .fb:hover {
+  color: #3b5998;
+  -webkit-box-shadow: 0 0 60px rgba(59, 89, 152, 0.8);
+          box-shadow: 0 0 60px rgba(59, 89, 152, 0.8);
+}
+
+.homepage .hero .icons .gt:hover {
+  color: #ddddf1;
+  -webkit-box-shadow: 0 0 60px rgba(221, 221, 241, 0.8);
+          box-shadow: 0 0 60px rgba(221, 221, 241, 0.8);
+}
+
+.homepage .hero .icons .lid:hover {
+  color: #2a2aa7;
+  -webkit-box-shadow: 0 0 80px rgba(42, 42, 167, 0.99);
+          box-shadow: 0 0 80px rgba(42, 42, 167, 0.99);
+}
+
+.homepage .hero .icons .twt:hover {
+  color: #00acee;
+  -webkit-box-shadow: 0 0 60px rgba(0, 172, 238, 0.8);
+          box-shadow: 0 0 60px rgba(0, 172, 238, 0.8);
+}
+
+@media screen and (max-width: 1100px) {
+  .homepage {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */

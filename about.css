@@ -1,0 +1,99 @@
+.about-part {
+  width: 100%;
+  height: 100vh;
+  margin-top: 4rem;
+}
+
+.about-part .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .about-part .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 1.5rem;
+  }
+}
+
+.about-part .row .about-left {
+  margin-left: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about-part .row .about-left h1 {
+  font-size: 3.5rem;
+  color: #2b2a2a;
+  position: relative;
+}
+
+.about-part .row .about-left h1::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  width: 9rem;
+  height: 8%;
+  background-color: black;
+}
+
+.about-part .row .about-left .about-text-top {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.about-part .row .about-left .about-text-down {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+
+.about-part .row .about-left .btn {
+  margin-top: 3rem;
+  text-align: center;
+  width: 30%;
+  border: 2px solid #38fa67;
+  font-size: 1.5rem;
+  background-color: #38fa67;
+  padding: 1rem 1rem;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.about-part .row .about-left .btn:hover {
+  background: none;
+  color: black;
+  -webkit-box-shadow: 0 0 40px 0 #38fa87;
+          box-shadow: 0 0 40px 0 #38fa87;
+}
+
+.about-part .row .about-right {
+  margin-left: 5rem;
+  width: 80%;
+}
+
+.about-part .row .about-right img {
+  width: 60%;
+  height: 100%;
+}
+/*# sourceMappingURL=about.css.map */
